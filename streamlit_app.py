@@ -4,7 +4,9 @@ import numpy as np
 import pickle
 
 # Load trained model
-model = pickle.load(open(r'C:\Users\yrangeg\Downloads\credit_model.pkl', 'rb'))
+#model = pickle.load(open(r'C:\Users\yrangeg\Downloads\credit_model.pkl', 'rb'))
+model = pickle.load(open('credit_model.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 st.title("🏦 Credit Default Prediction App (BFSI)")
 
